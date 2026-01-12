@@ -51,7 +51,7 @@ This project answers that question using **Value at Risk (VaR)** — one of the 
 ## 📊 Data Source
 
 * **Yahoo Finance**
-* Time period: **Jan 2023 – Jan 2025**
+* Time period: **Jan 2022 – Jan 2025**
 * Frequency: **Daily**
 
 ---
