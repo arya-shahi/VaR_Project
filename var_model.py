@@ -7,28 +7,21 @@ data.to_csv("RELIANCE.csv")
 
 # Step 2: Calculate daily returns
 returns = data["Close"].pct_change().dropna()
-
 returns.to_csv("daily_returns.csv")
-
 print("Daily returns calculated and saved successfully")
 
 # Step 3: Historical Value at Risk (VaR)
 
 confidence_level = 0.95
-
 var_95 = float(returns.quantile(1 - confidence_level))
-
 print(f"95% Historical VaR: {var_95:.4f}")
-
 import numpy as np
 
 # Step 4: Monte Carlo VaR
 
 num_simulations = 10000
-
 mean_return = returns.mean()
 std_return = returns.std()
-
 simulated_returns = np.random.normal(
     mean_return,
     std_return,
@@ -37,8 +30,6 @@ simulated_returns = np.random.normal(
 
 mc_var_95 = np.percentile(simulated_returns, 5)
 print(f"95% Monte Carlo VaR: {mc_var_95:.4f}")
-
-
 import matplotlib.pyplot as plt
 
 plt.hist(returns, bins=50, alpha=0.7)
