@@ -1,11 +1,11 @@
 
-# 📉 Value at Risk (VaR) Analysis using Python
+#  Value at Risk (VaR) Analysis using Python
 
 *A practical risk-management project using real stock market data*
 
 ---
 
-## 🔍 Why this project?
+##  Why this project?
 
 Financial institutions don’t ask *“How much can I gain?”*
 They ask **“How much can I lose on a bad day?”**
@@ -14,19 +14,7 @@ This project answers that question using **Value at Risk (VaR)** — one of the 
 
 ---
 
-## 🚀 What this project does
-
-✔️ Downloads **real stock market data**
-✔️ Calculates **daily returns**
-✔️ Estimates **95% downside risk**
-✔️ Compares **Historical vs Monte Carlo VaR**
-✔️ Visualizes risk clearly with plots
-
-📌 Stock analyzed: **Reliance Industries (RELIANCE.NS)**
-
----
-
-## 🧠 Concepts Applied
+## Concepts Applied
 
 * Probability & statistics
 * Quantiles & percentiles
@@ -36,7 +24,7 @@ This project answers that question using **Value at Risk (VaR)** — one of the 
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Tool       | Purpose               |
 | ---------- | --------------------- |
@@ -48,7 +36,7 @@ This project answers that question using **Value at Risk (VaR)** — one of the 
 
 ---
 
-## 📊 Data Source
+##  Data Source
 
 * **Yahoo Finance**
 * Time period: **Jan 2022 – Jan 2025**
@@ -56,7 +44,7 @@ This project answers that question using **Value at Risk (VaR)** — one of the 
 
 ---
 
-## 🧮 Methodology (Simple Explanation)
+##  Methodology (Simple Explanation)
 
 ### 🔹 Step 1: Data Collection
 
@@ -89,66 +77,19 @@ Daily returns are calculated using percentage change in prices.
 
 ---
 
-## 📈 Results
+## Results
 
 | Metric              | Value        |
 | ------------------- | ------------ |
 | 95% Historical VaR  | ≈ **-2.02%** |
 | 95% Monte Carlo VaR | ≈ **-2.33%** |
 
-📌 **Interpretation:**
+ **Interpretation:**
 There is a **5% chance** that the stock may lose **more than ~2% in a single day**.
 
 ---
 
-## 📊 Visualization
-
-The plot below shows:
-
-* Distribution of daily returns
-* Historical VaR (red line)
-* Monte Carlo VaR (green line)
-
-📁 Saved as: `var_distribution.png`
-
----
-
-## 📂 Project Structure
-
-```
-VaR_Project/
-│
-├── var_model.py              # Main VaR implementation
-├── RELIANCE.csv              # Price data
-├── daily_returns.csv         # Computed returns
-├── var_distribution.png      # Visualization
-└── README.md                 # Documentation
-```
-
----
-
-## ▶️ How to Run
-
-```bash
-pip install yfinance pandas numpy matplotlib
-python var_model.py
-```
-
----
-
-## 🎯 Why this project matters?
-
-This project demonstrates:
-
-* ✅ Ability to work with **real financial data**
-* ✅ Understanding of **risk metrics used in industry**
-* ✅ Hands-on **quantitative modeling**
-* ✅ Clean visualization & interpretation
-* ✅ End-to-end project ownership
-
----
-
-## 🔮 Future Enhancements
+##  Future Enhancements
 
 * Parametric (Variance–Covariance) VaR
 * Expected Shortfall (CVaR)
